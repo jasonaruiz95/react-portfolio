@@ -18,14 +18,6 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState, useEffect } from "react";
 
-//   const getViews = async () => {
-//   const res = await fetch('https://owdnky6qb1.execute-api.us-west-2.amazonaws.com/Prod/webvisits');
-//   const data = await res.json();
-
-//   return {
-//     props: { pageViews: data}
-//   }
-// }
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -39,7 +31,7 @@ function Home() {
     .then((response) => {
       console.log(response.body);
     })
-    
+
     fetch(
       "https://owdnky6qb1.execute-api.us-west-2.amazonaws.com/Prod/webvisits"
     )
@@ -97,7 +89,7 @@ function Home() {
             <h3 className="text-2xl py-2 md:text-3xl">
               Full Stack Software Engineer and Cloud Developer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 py-2 md:text-xl max-w-lg mx-auto dark:text-white">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
               Passionate about creating modern web applications in the cloud,
               reading, and contributing to a team effort through Volleyball.
               Looking to connect with employers that need help modernizing their
@@ -127,7 +119,7 @@ function Home() {
           <div>
             <h3 className="text-3xl py-1 ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I've worked in the IT industry for the past 5 years and am looking
+              Ive worked in the IT industry for the past 5 years and am looking
               to breakout into my first Software Engineering role. I have had
               work experience with Server and platform operations within
               Telecommunications where I worked with VMWare to create highly
@@ -194,64 +186,70 @@ function Home() {
           <div>
             <h3 className="text-3xl py-1">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I've worked on various different projects over the years which
+              Ive worked on various different projects over the years which
               will be showcased here.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web1}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
               ></Image>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web2}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
               ></Image>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web3}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
               ></Image>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web4}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
               ></Image>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web5}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
               ></Image>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 src={web6}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"100"}
+                height={"100"}
                 layout="responsive"
-              ></Image>
+              />
             </div>
           </div>
         </section>
