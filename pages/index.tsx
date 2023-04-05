@@ -4,6 +4,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
 import jason from "../public/jason.png";
@@ -101,6 +102,9 @@ function Home() {
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <a href="https://www.linkedin.com/in/jason-ruiz-028561177/">
               <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/jasonaruiz95">
+              <AiFillGithub />
             </a>
           </div>
           <div className="relative flex justify-center mt-20">
