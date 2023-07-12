@@ -7,8 +7,9 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import Image from "next/image";
-import jason from "../public/jason.png";
+import jason_crop from "../public/jason_crop.png";
 import aws from "../public/aws.png";
+import aws_associate from "../public/aws_associate.png";
 import wsu from "../public/wsu.png";
 import views from "../public/views.png";
 import web1 from "../public/web1.png";
@@ -17,6 +18,8 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import web7 from "../public/web7.png";
+import web8 from "../public/web8.png";
 import { useState, useEffect } from "react";
 
 
@@ -65,22 +68,22 @@ function Home() {
                   onClick={() => setDarkMode(!darkMode)}
                 />
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="#"
                 >
                   Resume
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   href="#"
                 >
                   Matching Game
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -109,11 +112,11 @@ function Home() {
           </div>
           <div className="relative flex justify-center mt-20">
             <Image
-              src={jason}
+              src={jason_crop}
               alt="profile pic"
-              width={200}
-              height={200}
-              className="flex justify-center md:h-96 md:w-96"
+              width={600}
+              height={600}
+              className="flex justify-center "
             />
           </div>
         </section>
@@ -137,7 +140,7 @@ function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 justify-center dark:bg-white">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 justify-center dark:bg-white">
               <Image
                 src={aws}
                 alt="aws"
@@ -149,7 +152,22 @@ function Home() {
                 AWS Cloud Practitioner
               </h3>
               <p className="py-2">
-                Completed the AWS Cloud Practitioner Exam in April of 2022.
+                Completed the AWS Cloud Practitioner Exam in April of 2023.
+              </p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 justify-center dark:bg-white">
+              <Image
+                src={aws_associate}
+                alt="aws"
+                width={200}
+                height={200}
+                className="flex justify-center mx-auto"
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                AWS Solutions Architect Associate
+              </h3>
+              <p className="py-2">
+                Completed the AWS Solutions Architect Associate Exam in April of 2023.
               </p>
             </div>
 
@@ -249,6 +267,26 @@ function Home() {
               <Image
                 alt=""
                 src={web6}
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                alt=""
+                src={web7}
+                className="rounded-lg object-cover"
+                width={"100"}
+                height={"100"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                alt=""
+                src={web8}
                 className="rounded-lg object-cover"
                 width={"100"}
                 height={"100"}
